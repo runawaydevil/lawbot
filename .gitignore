@@ -1,0 +1,9 @@
+# Ignorar dependências
+node_modules/
+venv/
+tokens/
+
+# Arquivos de configuração locais
+.env
+*.log
+__pycache__/
