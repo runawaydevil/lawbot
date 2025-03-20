@@ -18,7 +18,9 @@ log/
 logs/
 
 # Ignorar arquivos da pasta uploads (evita upload de PDFs, imagens e outros arquivos temporários)
-uploads/
+uploads/*
+!.gitkeep
+
 
 # Ignorar arquivos de pacotes gerados automaticamente
 *.lock
