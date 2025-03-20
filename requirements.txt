@@ -9,3 +9,7 @@ requests==2.31.0
 rich==13.7.1
 openai==1.14.3
 tiktoken==0.6.0
+
+# Novas dependências
+PyMuPDF==1.23.6  # Para extração de texto de PDFs
+wppconnect==1.2.0  # Para integração com WhatsApp
