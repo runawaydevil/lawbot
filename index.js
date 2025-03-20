@@ -22,10 +22,12 @@ wppconnect.create({
 
     client.onMessage(async message => {
         const chatId = message.from;
-        const texto = message.body ? message.body.trim() : "";
+        const texto = message.body ? message.body.trim().toLowerCase() : "";
         const isMedia = message.isMedia || message.mimetype === 'application/pdf';
 
-        if (isMedia && message.mimetype === 'application/pdf') {
+        if (texto === "!dev") {
+            await client.sendText(chatId, "📢 Desenvolvido por Pablo Murad - 2025");
+        } else if (isMedia && message.mimetype === 'application/pdf') {
             await client.sendText(chatId, "📄 Recebi seu PDF. Processando, aguarde...");
             
             const buffer = await client.decryptFile(message);
@@ -44,7 +46,7 @@ wppconnect.create({
                 await client.sendText(chatId, bufferResposta.trim() || "⚠️ Ocorreu um erro ao processar o PDF.");
             });
         } 
-        else if (texto.toLowerCase() === "!jus") {
+        else if (texto === "!jus") {
             await client.sendText(chatId, "⏳ Iniciando consulta jurídica... Aguarde.");
             await client.sendText(chatId, "🔎 Deseja pesquisar por (1) Número do Processo ou (2) CPF/CNPJ?");
             estadosUsuarios[chatId] = "aguardando_tipo_consulta";
@@ -63,7 +65,7 @@ wppconnect.create({
             await client.sendText(chatId, "Digite o código do tribunal:");
             estadosUsuarios[chatId] = "aguardando_tribunal";
         } else if (estadosUsuarios[chatId] === "aguardando_tribunal") {
-            processosAtivos[chatId].tribunal = texto;
+            processosAtivos[chatId].tribunal = texto.toUpperCase();
             await client.sendText(chatId, "⏳ Processando consulta, aguarde...");
 
             const pythonProcess = spawn('python', ['src/main.py'], {
