@@ -1,5 +1,6 @@
 {
   "dependencies": {
-    "@wppconnect-team/wppconnect": "^1.35.2"
+    "@wppconnect-team/wppconnect": "^1.35.2",
+    "csv-parser": "^3.2.0"
   }
 }
