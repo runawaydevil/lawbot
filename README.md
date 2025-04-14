@@ -87,5 +87,5 @@ Este projeto é livre e pode ser usado e modificado sem restrições.
 Contribuições são bem-vindas! Sinta-se à vontade para abrir issues ou enviar pull requests.
 
 ## 📞 Suporte
-Para suporte, entre em contato através do WhatsApp ou abra uma issue no GitHub.
+Para suporte, por favor abra uma issue no GitHub.
 
