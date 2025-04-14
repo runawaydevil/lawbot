@@ -77,3 +77,28 @@ python src/pdf_processor.py caminho/do/arquivo.pdf
 ## 📜 Licença
 Este projeto é **livre** e pode ser usado e modificado sem restrições.
 
+## Configuração do Ambiente
+
+1. Clone o repositório:
+```bash
+git clone https://github.com/seu-usuario/thelawyer.git
+cd thelawyer
+```
+
+2. Instale as dependências:
+```bash
+npm install
+pip install -r requirements.txt
+```
+
+3. Configure as variáveis de ambiente:
+   - Copie o arquivo `.env.example` para `.env`
+   - Preencha as variáveis de ambiente com suas chaves de API
+   - Copie o arquivo `permitidos.csv.example` para `permitidos.csv`
+   - Adicione os números de telefone permitidos no arquivo `permitidos.csv`
+
+4. Execute o projeto:
+```bash
+node index.js
+```
+

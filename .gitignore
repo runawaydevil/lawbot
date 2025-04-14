@@ -1,27 +1,42 @@
-# Ignorar dependências
+# Dependências
 node_modules/
 venv/
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Arquivos de ambiente
+.env
+.env.local
+.env.*.local
+
+# Arquivos de log
+log/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
+
+# Arquivos de build
+dist/
+build/
+*.tsbuildinfo
+
+# Arquivos de IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Arquivos temporários
+*.tmp
+*.temp
+uploads/
 tokens/
 
-# Arquivos de configuração locais
-.env
-*.log
-
-# Ignorar cache do Python
-__pycache__/
-*.pyc
-*.pyo
-*.pyd
-
-# Ignorar arquivos da pasta de logs
-log/
-logs/
-
-# Ignorar arquivos da pasta uploads (evita upload de PDFs, imagens e outros arquivos temporários)
-uploads/*
-!.gitkeep
-
-
-# Ignorar arquivos de pacotes gerados automaticamente
-*.lock
-package-lock.json
+# Arquivos específicos do projeto
+permitidos.csv
