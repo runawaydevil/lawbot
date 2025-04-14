@@ -40,3 +40,13 @@ tokens/
 
 # Arquivos específicos do projeto
 permitidos.csv
+
+# Documentação
+help docs/
+
+# Cache Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
