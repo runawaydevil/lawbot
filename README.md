@@ -8,6 +8,8 @@
 [![DataJud](https://img.shields.io/badge/DataJud-API-lightgrey.svg)](https://datajud.cnj.jus.br/)
 [![Status](https://img.shields.io/badge/Status-Active-success.svg)](https://github.com/runawaydevil/lawbot)
 [![Version](https://img.shields.io/badge/Version-1.0.0-blue.svg)](https://github.com/runawaydevil/lawbot/releases)
+[![Hacker](https://img.shields.io/badge/Hacker-1337-red.svg)](https://www.hackerrank.com/)
+[![Security](https://img.shields.io/badge/Security-Protected-brightgreen.svg)](https://www.owasp.org/)
 
 **Desenvolvido por Pablo Murad**
 
